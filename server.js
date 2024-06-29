@@ -2,7 +2,7 @@
 var http = require('http');
 var querystring = require('querystring');
 
-var server = http.createServer().listen(3000);
+var server = http.createServer().listen(80);
 
 server.on('request', function (req, res) {
     if (req.method == 'POST') {
@@ -21,4 +21,4 @@ server.on('request', function (req, res) {
     });
 });
 
-console.log('Listening on port 3000');
+console.log('Listening on port 80');
